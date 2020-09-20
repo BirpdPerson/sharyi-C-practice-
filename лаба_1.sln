@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.2", "лаба_1.2\лаба_1.2.vcxproj", "{B0CE0FD7-3E6C-4057-AB3A-F4940C1615EB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.1", "..\лаба_1.1\C++(Programming)\C++(Programming).vcxproj", "{3B1C05F6-1DA0-4CED-B19B-72E565B5A69A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.1", "лаба_1.1\C++(Programming).vcxproj", "{3B1C05F6-1DA0-4CED-B19B-72E565B5A69A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.3", "..\лаба_1.3\лаба_1.3\лаба_1.3.vcxproj", "{F33E1884-AEDB-4E88-B8B9-FBB32D7C94E7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.3", "лаба_1.3\лаба_1.3.vcxproj", "{F33E1884-AEDB-4E88-B8B9-FBB32D7C94E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
