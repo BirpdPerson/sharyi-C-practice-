@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.1", "лаба_1.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "лаба_1.3", "лаба_1.3\лаба_1.3.vcxproj", "{F33E1884-AEDB-4E88-B8B9-FBB32D7C94E7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Лаба1", "Лаба1", "{9B1B9756-4053-41A6-9EAE-5710891FA5E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -44,6 +46,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0CE0FD7-3E6C-4057-AB3A-F4940C1615EB} = {9B1B9756-4053-41A6-9EAE-5710891FA5E7}
+		{3B1C05F6-1DA0-4CED-B19B-72E565B5A69A} = {9B1B9756-4053-41A6-9EAE-5710891FA5E7}
+		{F33E1884-AEDB-4E88-B8B9-FBB32D7C94E7} = {9B1B9756-4053-41A6-9EAE-5710891FA5E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FBE769DC-DF63-437E-8FDB-815C33B5C4DD}

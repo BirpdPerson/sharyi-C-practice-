@@ -2,6 +2,11 @@
 #include <cstring>
 #include <cstdio>
 
+//Функция strchr.
+//Формат char* strchr(char* s, int c).
+//Функция находит в строке s первое вхождение символа с и возвращает подстроку,
+//начинающуюся с этого символа.
+
 int main()
 {
 	char i;
