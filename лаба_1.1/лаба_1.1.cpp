@@ -69,6 +69,6 @@ int main()
 	}
 
 	delete[] mass;
-	delete a;
+	delete[] a;
 }
 
