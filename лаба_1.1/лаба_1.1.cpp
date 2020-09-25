@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include <cstdio> 
+#include <cstdio>
 
 //Объявить массив из n=15 вещественных чисел, проинициализировать единицами.
 //Функция processArray() должна домножить все элементы с четными индексами на
@@ -10,7 +10,7 @@
 
 int count = 0;
 
-int* processArray(int* arr, int sizeMass) {
+int processArray(int* arr, int* &resultArr, int sizeMass) {
 
 	int a, b;
 	scanf_s("%d", &a);
@@ -24,11 +24,11 @@ int* processArray(int* arr, int sizeMass) {
 		int r = rand() % b + a;
 		if (i % 2 == 0 && i > 0)
 		{
-			arr[i] = arr[i]*r;
+			arr[i] = arr[i] * r;
 		}
 
-		//cout << "arr[" << i << "] " << arr[i] << endl;
-		printf("arr[%d] = %d  \n", i, arr[i]);
+		//cout « "arr[" « i « "] " « arr[i] « endl;
+		printf("arr[%d] = %d \n", i, arr[i]);
 
 		if (arr[i] < 0)
 		{
@@ -36,39 +36,42 @@ int* processArray(int* arr, int sizeMass) {
 		}
 	}
 
-	int* arr2 = new int[count];
+	resultArr = new int[count];
 
 	for (int i = 0, j = 0; i < sizeMass; i++)
 	{
 		if (arr[i] < 0)
 		{
-			arr2[j] = arr[i];
+			resultArr[j] = arr[i];
 			j++;
 		}
 	}
 
-	return arr2;
+	return count;
 }
 int main()
 {
-    int* mass = new int[15];
-	for (int i = 0; i < 15 ; i++)
+	int sizeArr = 15;
+
+	int* mass = new int[15];
+	for (int i = 0; i < 15; i++)
 	{
 		mass[i] = 1;
 	}
 
-	int* a = processArray(mass, 15);
+	int* resultArr = nullptr;
 
-	//cout << "\nmass[i] < 0:   ";
-	printf("\nmass[i]<0  ");
+	int countItem = processArray(mass, resultArr, 15);
+
+	//cout « "\nmass[i] < 0: ";
+	printf("\nmass[i]<0 ");
 
 	for (int i = 0; i < count; i++)
 	{
-		/*cout << a[i] << " ";*/
-		printf("%d  ", a[i]);
+		/*cout « a[i] « " ";*/
+		printf("%d ", resultArr[i]);
 	}
 
 	delete[] mass;
-	delete a;
+	delete[] resultArr;
 }
-
