@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <string>
-#include "BubbleSort.h"
 
 using namespace std;
 
@@ -68,6 +67,22 @@ public:
     {
         cout <<"FullName: \t" << FullName << "\nGender: \t" <<  Gender <<"\nBirthday \t" << Birthday << "\nYearOfReceipt \t" << YearOfReceipt << "\nNumberEnchantedBook: \t" << NumberEnchantedBook << "\nGPA: \t" << GPA << "\n" <<endl;
     }
+        template<class Pred>
+        static void bubbleSorting(Student* arr, int size, Pred pred)
+        {
+            for (int i = 1; i < size; i++)
+            {
+                for (int j = 0; j < size - i; j++)
+                {
+                    if (pred(arr[j], arr[j + 1]))
+                    {
+                        auto temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+        }
 
 private:
     string FullName;
@@ -131,7 +146,7 @@ int main()
     student[2] = s3;
     student[3] = *s4;
     
-    BubbleSort::bubbleSorting(student, 4, [](Student s1, Student s2) {return s1.GetGPA() < s2.GetGPA(); });
+    Student::bubbleSorting(student, 4, [](Student s1, Student s2) {return s1.GetGPA() < s2.GetGPA(); });
 
     for (int i = 0; i < 4; i++)
     {
